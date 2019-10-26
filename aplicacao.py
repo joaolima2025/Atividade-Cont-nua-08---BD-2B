@@ -5,12 +5,12 @@ app  = Flask(__name__)
 
 
 def index(user):
-    return render_template("index.html")
+    return render_template("index.html", user=User)
 
 def cursos('/cursos'):
     return render_template("cursos.html")
 
-def Administracao('/Administracao'):
+def Administracao("/Administracao"):
     return render_template("Administracao.html")
 
 def Cienciasdacomptacao('/Ciências da Computação'):
