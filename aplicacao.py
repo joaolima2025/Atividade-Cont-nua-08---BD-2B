@@ -4,6 +4,7 @@ app  = Flask(__name__)
 @app.route('/index/<user>')
 
 
+@app.route("/", defaults={"user":None})
 def index(user):
     return render_template("index.html", user=User)
 
